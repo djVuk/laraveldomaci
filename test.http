@@ -1,0 +1,60 @@
+GET http://127.0.0.1:8001/api/kartas HTTP/1.1
+
+###
+POST http://127.0.0.1:8001/api/kartas HTTP/1.1
+Content-Type: application/json
+
+{
+    "Utakmica": "Partizan - Zvezda",
+    "Ulaz": "Ulaz T",
+    "Red": "1",
+    "Sediste": "12",
+    "Sponzor":"Sponzor 1"
+}
+
+###
+
+PUT http://127.0.0.1:8001/api/kartas/2 
+Content-Type: application/json
+
+{
+    "Utakmica": "Partizan - Radnicki",
+    "Ulaz": "Ulaz B",
+    "Red": "14",
+    "Sediste": "54",
+    "Sponzor":"Sponzor 1"
+}
+
+###
+
+DELETE http://127.0.0.1:8001/api/kartas/5
+
+
+###
+
+GET http://127.0.0.1:8001/api/rezervacijas HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8001/api/rezervacijas HTTP/1.1
+Content-Type: application/json
+
+{
+    "Ime": "Vuk",
+    "Prezime": "Djordjevic",
+    "Karta": 3
+}
+
+###
+
+GET http://127.0.0.1:8001/api/postovis HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8001/api/postovis HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Moj drugi post",
+    "content": "Moj drugi kontent"
+}
